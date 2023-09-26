@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/TraffikScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/SkoleScene.unity
+    path: Assets/Scenes/SkoleScene.unity
     guid: 14b442e2b890e4a93a79780d8a0959d9
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 8492f99241b25ea40b949e167b8c40ad, type: 2}
