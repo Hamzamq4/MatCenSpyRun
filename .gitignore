@@ -12,10 +12,7 @@
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
-
-
-# User Settings
-/APDP4/UserSettings/
+/[Mm]emoryCaptures/
 
 # Recordings can get excessive in size
 /[Rr]ecordings/
@@ -63,8 +60,6 @@ sysinfo.txt
 *.aab
 *.unitypackage
 *.app
-*.icloud
-*.log
 
 # Crashlytics generated file
 crashlytics-build.properties
@@ -75,6 +70,3 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
-
-# Ignore Unity .meta files
-**/*.meta
