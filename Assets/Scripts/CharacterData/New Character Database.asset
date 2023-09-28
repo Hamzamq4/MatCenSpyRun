@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0103f075b00225c44b3b7f16c2dc3af1, type: 3}
+  m_Name: New Character Database
+  m_EditorClassIdentifier: 
+  character:
+  - characterTexture: {fileID: 108165725708285713, guid: 4fda7c56bd7b0984eb14864ca99c1b11, type: 3}
+  - characterTexture: {fileID: 7207935210656876672, guid: 19d84427a4ea9b242b903a7e6d207953, type: 3}
+  - characterTexture: {fileID: 3730615903984281391, guid: 0e2c80b2f73fae542ab7fbf39b825604, type: 3}
+  - characterTexture: {fileID: 2413785083579663781, guid: 85b0d310f292fb541bbb9992289fb85a, type: 3}
+  - characterTexture: {fileID: 8540271247397778581, guid: c30ebe5b725dd19489917c76acda6077, type: 3}
+  - characterTexture: {fileID: 970575961096822208, guid: a1542e9e0fa122146bdf3e6f93e1b571, type: 3}
+  - characterTexture: {fileID: 5410870782050289390, guid: 9b6cc65769627e645bac9307a2896ffa, type: 3}
+  - characterTexture: {fileID: 3737400071377988374, guid: 226868db800ce114498e8916f93f8557, type: 3}
+  - characterTexture: {fileID: 6867549633399866942, guid: 9fc7d84b83ca42944a2c2a774f64608f, type: 3}
+  - characterTexture: {fileID: 4489638220659627958, guid: 8c658cf9c35ece64ca178aa3a8598ea3, type: 3}
+  - characterTexture: {fileID: 1575826792311369303, guid: 609c83f2da34d234c87b72c84901e03b, type: 3}
+  - characterTexture: {fileID: 6725736048174529673, guid: 46c7a4a15e4959841b89d315a3023134, type: 3}
+  - characterTexture: {fileID: 5536952246947114693, guid: d4ea99fc959deac44b666a7af77187e5, type: 3}
+  - characterTexture: {fileID: 8834484996140381109, guid: bb7f8de049e79d24e8b2366c17aa4e2b, type: 3}
+  - characterTexture: {fileID: 1905821043409776889, guid: dcbd7a13e613f2e468c609c96d7ae4bb, type: 3}

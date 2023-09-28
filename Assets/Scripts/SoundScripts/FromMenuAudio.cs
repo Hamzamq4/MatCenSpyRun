@@ -8,12 +8,32 @@ public class FromMenuAudio : MonoBehaviour
     public AudioClip longIntro;
     public AudioSource radio;
     public GameObject gameManager;
+
     private bool hasPlayedIntro = false;
     private int activeScene;
+
+    private static FromMenuAudio instance;
+
+    private void Awake()
+    {
+        // Check if an instance already exists
+        if (instance == null)
+        {
+            // If not, set this as the instance
+            instance = this;
+            // Don't destroy this object when loading new scenes
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            // If an instance already exists, destroy this one
+            Destroy(gameObject);
+        }
+    }
+    
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(gameObject);
         GameObject gameManager = GameObject.FindGameObjectWithTag("GameManager");
 
     }
