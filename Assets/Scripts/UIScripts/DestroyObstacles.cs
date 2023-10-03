@@ -5,13 +5,16 @@ using UnityEngine;
 public class DestroyObstacles : MonoBehaviour
 {
     public GameObject particleSystemPrefab; // Assign the particle system prefab in the Inspector
-    public AudioClip destroySound; // Assign the sound in the Inspector
+    public AudioClip maleDestroySound; // Assign the sound in the Inspector
+
+    public AudioClip femaleDestroySound;
 
     private AudioSource audioSource;
 
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -26,11 +29,26 @@ public class DestroyObstacles : MonoBehaviour
             // Instantiate a new particle system at the position of the destroyed gameobject
             Instantiate(particleSystemPrefab, other.gameObject.transform.position, Quaternion.identity);
 
-            // Play the destroy sound
-            if (destroySound != null)
+            GameObject characterGender = GameObject.Find("CharacterDataTransfer");
+
+            CharacterManager characterManager = characterGender.GetComponent<CharacterManager>();
+            
+            if (characterManager.isFemale == false)
             {
-                audioSource.PlayOneShot(destroySound);
+                if (femaleDestroySound != null)
+                {
+                audioSource.PlayOneShot(maleDestroySound);
+
+                }
             }
+
+            if (characterManager.isFemale == true)
+            {
+                if (femaleDestroySound != null)
+                {
+                    audioSource.PlayOneShot(femaleDestroySound);
+                }
         }
     }
+}
 }
