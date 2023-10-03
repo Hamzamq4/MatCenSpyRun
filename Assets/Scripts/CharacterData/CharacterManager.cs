@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,6 +16,7 @@ public class CharacterManager : MonoBehaviour
     void Start()
     {
         UpdateCharacter(selectedOption);
+        
 
     }
 
