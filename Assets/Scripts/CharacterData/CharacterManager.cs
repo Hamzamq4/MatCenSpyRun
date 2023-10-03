@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,11 +10,14 @@ public class CharacterManager : MonoBehaviour
 
     public SkinnedMeshRenderer characterTexture;
 
-    private int selectedOption;
+    public int selectedOption;
+
+    public bool isFemale;
     // Start is called before the first frame update
     void Start()
     {
         UpdateCharacter(selectedOption);
+
     }
 
     public void NextOption()
@@ -45,5 +49,54 @@ public class CharacterManager : MonoBehaviour
         
         characterTexture.sharedMesh = character.characterTexture.GetComponent<SkinnedMeshRenderer>().sharedMesh;
         characterTexture.sharedMaterial = character.characterTexture.GetComponent<SkinnedMeshRenderer>().sharedMaterial;
+
+        switch (selectedOption)
+        {
+            case 0:
+                isFemale = false;
+                break;
+            case 1:
+                isFemale = false;
+                break;
+            case 2:
+                isFemale = true;
+                break;
+            case 3:
+                isFemale = false;
+                break;
+            case 4:
+                isFemale = false;
+                break;
+            case 5:
+                isFemale = true;
+                break;
+            case 6:
+                isFemale = false;
+                break;
+            case 7:
+                isFemale = true;
+                break;
+            case 8:
+                isFemale = false;
+                break;
+            case 9:
+                isFemale = false;
+                break;
+            case 10:
+                isFemale = false;
+                break;
+            case 11:
+                isFemale = false;
+                break;
+            case 12:
+                isFemale = false;
+                break;
+            case 13:
+                isFemale = false;
+                break;
+            case 14:
+                isFemale = true;
+                break;
+        }
     }
 }

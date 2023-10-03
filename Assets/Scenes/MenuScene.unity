@@ -665,6 +665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterDB: {fileID: 11400000, guid: 8d5b06d07299e1e4190384551baec1be, type: 2}
   characterTexture: {fileID: 196934944}
+  isFemale: 0
 --- !u!1 &233316234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1107,6 +1108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterDB: {fileID: 11400000, guid: 8d5b06d07299e1e4190384551baec1be, type: 2}
   characterTexture: {fileID: 447898386}
+  isFemale: 0
 --- !u!114 &447898389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2920,7 +2922,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1301099863}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1301099865
 Camera:
   m_ObjectHideFlags: 0
