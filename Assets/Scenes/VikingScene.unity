@@ -1228,6 +1228,7 @@ MonoBehaviour:
   - {fileID: 169136, guid: 8a70dae058e81494ab259a5f6081c079, type: 3}
   - {fileID: 184438, guid: 55dbc70a0719b61439824f89af870e41, type: 3}
   - {fileID: 159702, guid: aa88505dd024ec5408aaeeeaee064ef2, type: 3}
+  - {fileID: 7962199819078159310, guid: adb40fbc165c1d241a8b5cc94be88e1e, type: 3}
   soundObstacles:
   - {fileID: 1939034542094382107, guid: 2c6f946e3ba29ca4f94d0b4135f5091d, type: 3}
   - {fileID: 5717508223820659031, guid: bc88c59c7296b431dbbcd16d5b77e449, type: 3}
@@ -9741,7 +9742,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particleSystemPrefab: {fileID: 163066, guid: 53777b8572d1e7242bc90044f62667ce, type: 3}
-  destroySound: {fileID: 8300000, guid: 7652dd8c4437d8a499c02b2b2f4f9fc2, type: 3}
+  maleDestroySound: {fileID: 0}
+  femaleDestroySound: {fileID: 0}
 --- !u!4 &6450177392893084702
 Transform:
   m_ObjectHideFlags: 0
