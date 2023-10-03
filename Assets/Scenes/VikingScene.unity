@@ -1167,8 +1167,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   terrainPrefabs:
-  - {fileID: 7028618665781999005, guid: 62f99241c6d77784c806b617a067254b, type: 3}
   - {fileID: 7028618665781999005, guid: ed9a333586cc0b949bf8708d5e7f852a, type: 3}
+  - {fileID: 7028618665781999005, guid: 62f99241c6d77784c806b617a067254b, type: 3}
+  - {fileID: 7028618665781999005, guid: 4a83081195bd4364faa706ed9d821405, type: 3}
   player: {fileID: 6450177392892860472}
   deleteDistance: 200
   objectsToIgnore:
@@ -2619,7 +2620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3c4d4a919915bc43b12ec62e17ec060, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: {x: 0, y: 15, z: -10}
+  offset: {x: 0, y: 20, z: -15}
   target: {fileID: 6450177392893084696}
   translateSpeed: 3
   rotationSpeed: 2

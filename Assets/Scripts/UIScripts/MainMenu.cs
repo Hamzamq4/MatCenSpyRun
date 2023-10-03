@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour
     public GameObject indstillingerPanel;
 
     public GameObject startPanel;
-    public Button start, fremskridt, indstillinger, traffik, skole;
+    public Button start, fremskridt, indstillinger, traffik, skole, snebjerge;
 
     void Start() // adds listeners that detect when a click event occurs
     {
@@ -23,6 +23,8 @@ public class MainMenu : MonoBehaviour
         indstillinger.onClick.AddListener(delegate { ChangePanel("indstillinger"); });  
         traffik.onClick.AddListener(delegate { ChangeScene("traffik");});
         skole.onClick.AddListener(delegate { ChangeScene("skole");});
+        snebjerge.onClick.AddListener(delegate { ChangeScene("snebjerge"); });
+
     }
 
     public void DisablePanels() // adds listeners that detect when a click event occurs
@@ -63,15 +65,17 @@ public class MainMenu : MonoBehaviour
 
         public void ChangeScene(string sceneName)
     {
-        Debug.Log("Change scene");
         if (sceneName == "traffik")
         {
-            Debug.Log("Traffik");
             SceneManager.LoadScene("TraffikScene");
         }
         else if (sceneName == "skole")
         {
             SceneManager.LoadScene("SkoleScene");
+        }
+        else if (sceneName == "snebjerge")
+        {
+            SceneManager.LoadScene("VikingScene");
         }
     }
 }
