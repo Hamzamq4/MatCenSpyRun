@@ -15,7 +15,7 @@ public class TerrainGenerator : MonoBehaviour
     public float deleteDistance = 10f; // distance behind the player where the objects will be deleted
 
     private List<GameObject> objectsToDestroy = new List<GameObject>(); // list of objects to be destroyed
-    public GameObject[] objectsToIgnore; // array of objects that shouldnt be deleted
+    public List<GameObject> objectsToIgnore; // array of objects that shouldnt be deleted
 
     public float terrainLength = 50f;
 
@@ -39,6 +39,11 @@ public class TerrainGenerator : MonoBehaviour
 
     void Start()
     {
+        GameObject characterGender = GameObject.Find("CharacterDataTransfer");
+
+        objectsToIgnore.Add(characterGender);
+
+
         // instantiate the initial terrain prefab at the starting position
         currentTerrain = Instantiate(initialTerrain, Vector3.zero, Quaternion.identity);
         

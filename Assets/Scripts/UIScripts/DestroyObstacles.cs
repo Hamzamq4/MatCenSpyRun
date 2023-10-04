@@ -32,6 +32,8 @@ public class DestroyObstacles : MonoBehaviour
             GameObject characterGender = GameObject.Find("CharacterDataTransfer");
 
             CharacterManager characterManager = characterGender.GetComponent<CharacterManager>();
+
+            Debug.Log(characterManager.isFemale);
             
             if (characterManager.isFemale == false)
             {
