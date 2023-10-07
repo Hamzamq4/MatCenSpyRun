@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1843,6 +1843,7 @@ GameObject:
   - component: {fileID: 637290101}
   - component: {fileID: 637290103}
   - component: {fileID: 637290102}
+  - component: {fileID: 637290104}
   m_Layer: 0
   m_Name: Ambience
   m_TagString: Untagged
@@ -1983,6 +1984,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!54 &637290104
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637290100}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 122
+  m_CollisionDetection: 0
 --- !u!1 &657400327
 GameObject:
   m_ObjectHideFlags: 0
@@ -2634,6 +2651,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1014774991}
   - component: {fileID: 1014774992}
+  - component: {fileID: 1014774993}
   m_Layer: 0
   m_Name: RadioRight
   m_TagString: RadioRight
@@ -2752,6 +2770,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!54 &1014774993
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014774990}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 122
+  m_CollisionDetection: 0
 --- !u!1 &1031552262
 GameObject:
   m_ObjectHideFlags: 0
@@ -3062,6 +3096,7 @@ GameObject:
   - component: {fileID: 1224567261}
   - component: {fileID: 1224567263}
   - component: {fileID: 1224567262}
+  - component: {fileID: 1224567264}
   m_Layer: 0
   m_Name: Radio
   m_TagString: Radio
@@ -3196,6 +3231,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!54 &1224567264
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224567260}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 122
+  m_CollisionDetection: 0
 --- !u!1 &1230971704
 GameObject:
   m_ObjectHideFlags: 0
@@ -4153,6 +4204,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2093061573}
   - component: {fileID: 2093061574}
+  - component: {fileID: 2093061575}
   m_Layer: 0
   m_Name: RadioLeft
   m_TagString: RadioLeft
@@ -4271,6 +4323,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!54 &2093061575
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093061572}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 122
+  m_CollisionDetection: 0
 --- !u!1 &85746770649878466
 GameObject:
   m_ObjectHideFlags: 0
