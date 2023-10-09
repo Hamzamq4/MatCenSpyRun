@@ -161,6 +161,7 @@ MonoBehaviour:
   indstillinger: {fileID: 1862171446}
   traffik: {fileID: 1238380084}
   skole: {fileID: 1238380083}
+  snebjerge: {fileID: 0}
 --- !u!4 &15154140
 Transform:
   m_ObjectHideFlags: 0
@@ -665,6 +666,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterDB: {fileID: 11400000, guid: 8d5b06d07299e1e4190384551baec1be, type: 2}
   characterTexture: {fileID: 196934944}
+  selectedOption: 0
   isFemale: 0
 --- !u!1 &233316234
 GameObject:
@@ -1108,6 +1110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterDB: {fileID: 11400000, guid: 8d5b06d07299e1e4190384551baec1be, type: 2}
   characterTexture: {fileID: 447898386}
+  selectedOption: 0
   isFemale: 0
 --- !u!114 &447898389
 MonoBehaviour:

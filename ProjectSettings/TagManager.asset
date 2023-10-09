@@ -14,6 +14,8 @@ TagManager:
   - RadioRight
   - FromMenu
   - GameManager
+  - Coin
+  - staticObstacle
   layers:
   - Default
   - TransparentFX

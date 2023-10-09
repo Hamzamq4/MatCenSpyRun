@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -7036549506226950825}
   m_Layer: 0
   m_Name: SM_Prop_Barrier_01
-  m_TagString: Obstacle
+  m_TagString: staticObstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

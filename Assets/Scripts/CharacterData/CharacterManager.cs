@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+
 
 public class CharacterManager : MonoBehaviour
 {
     public CharacterDatabase characterDB;
 
     public SkinnedMeshRenderer characterTexture;
+
 
     public int selectedOption;
 
@@ -16,8 +19,6 @@ public class CharacterManager : MonoBehaviour
     void Start()
     {
         UpdateCharacter(selectedOption);
-        
-
     }
 
     public void NextOption()

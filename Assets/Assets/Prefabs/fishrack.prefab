@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 4688243293102334062}
   m_Layer: 0
   m_Name: fishrack
-  m_TagString: Obstacle
+  m_TagString: staticObstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

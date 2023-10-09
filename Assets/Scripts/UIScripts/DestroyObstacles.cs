@@ -19,7 +19,7 @@ public class DestroyObstacles : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Obstacle"))
+        if (other.gameObject.CompareTag("Obstacle") || other.gameObject.CompareTag("staticObstacle"))
         {
             Debug.Log("Collision with " + other.gameObject);
             Destroy(other.gameObject);

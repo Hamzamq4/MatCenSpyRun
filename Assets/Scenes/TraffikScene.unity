@@ -1147,6 +1147,7 @@ GameObject:
   - component: {fileID: 558159025}
   - component: {fileID: 558159028}
   - component: {fileID: 558159029}
+  - component: {fileID: 558159030}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -1262,6 +1263,25 @@ MonoBehaviour:
   enemyDeathSpawnPrefab: {fileID: 2260376842356947821, guid: d44815b6a70913d4b9797a8fb0cc8733, type: 3}
   fangetClip: {fileID: 8300000, guid: 534334654295f4bb5b680a2539695b39, type: 3}
   saveScore: 0
+--- !u!114 &558159030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558159024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8137880b2913c40f38b5402b73b34e45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lanes:
+  - {fileID: 1938645797}
+  - {fileID: 528139310}
+  - {fileID: 1529008785}
+  spacing: 2
+  coin: {fileID: 1939600682399660, guid: 937e9c32396257a4a9ab472491ad7601, type: 3}
+  spawnStartTime: 3
 --- !u!1 &600213100
 GameObject:
   m_ObjectHideFlags: 0
@@ -9278,6 +9298,7 @@ GameObject:
   - component: {fileID: 6450177392893084703}
   - component: {fileID: 6450177392893084704}
   - component: {fileID: 6450177392893084705}
+  - component: {fileID: 6450177392893084706}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -9878,6 +9899,19 @@ MonoBehaviour:
   minimumDistance: 15
   maximumTime: 1
   directionThreshold: 0.9
+--- !u!114 &6450177392893084706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6450177392892860472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dfaa04cb88c541f0becfac72ef85e2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 558159024}
 --- !u!4 &6450177392893084730
 Transform:
   m_ObjectHideFlags: 0
