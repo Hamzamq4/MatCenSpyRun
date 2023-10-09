@@ -19,6 +19,11 @@ public class PlayerMovement : MonoBehaviour
     float gravity = -50f; // added variable for gravity
     private Animator pAnimator;
 
+    private bool IsJumping;
+    private bool IsMoving;
+
+    private bool IsDeath;
+
     // added variables for speed increase
     float maxSpeed = 25f;
     float speedIncreasePerSecond = 0.01f;
@@ -133,8 +138,8 @@ public class PlayerMovement : MonoBehaviour
             yield return null;
         }
 
-        pAnimator.ResetTrigger("Jump_b"); // Reset the Jump_b animation trigger
-        movec.y = 0.0f;
+        //pAnimator.ResetTrigger("Jump_b"); // Reset the Jump_b animation trigger
+       // movec.y = 0.0f;
     }
 
     void checkInputs()
@@ -181,16 +186,29 @@ public class PlayerMovement : MonoBehaviour
 
         if (cc.isGrounded)
         {
-            bool isJumping = true;
-            if (isJumping)
+            pAnimator.SetBool("IsMoving", true);
+            IsMoving = true;
+            pAnimator.SetBool("IsJumping", false);
+            IsJumping = false;
+            pAnimator.SetBool("IsDeath", false);
+            IsDeath = false;
+            if (IsJumping)
             {
-                pAnimator.SetTrigger("Jump_b");
+                //pAnimator.SetTrigger("Jump_b");
+                pAnimator.SetBool("IsJumping", true);
+                IsJumping = true;
             }
 
             StartCoroutine(Jump());
 
             Debug.Log("Up swipe detected");
             return;
+        }
+        else
+        {
+            pAnimator.SetBool("IsMoving", false);
+            IsMoving = false;
+
         }
     }
     void OnTriggerEnter(Collider other)
