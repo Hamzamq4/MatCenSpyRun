@@ -1,12 +1,12 @@
 using UnityEngine;
 
-public class ChildrenWalking : MonoBehaviour
+public class NPCSWalking : MonoBehaviour
 {
     public float speed = 5f;  // speed of movement in -z direction
     public Animator animator;  // reference to Animator component
 
     private Rigidbody rb;
-
+    //Object moves with 5 units on the Z axis, and destroys itself after 10 seconds.
     void Start()
     {
         rb = GetComponent<Rigidbody>();

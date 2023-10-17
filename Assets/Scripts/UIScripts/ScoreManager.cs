@@ -124,6 +124,7 @@ public class ScoreManager : MonoBehaviour
 
     }
 
+    // Refills lives based on timer given in the refillLifeTime variable
     IEnumerator RefillLives()
     {
         yield return new WaitForSeconds(refillLifeTime);
@@ -136,6 +137,8 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
+    // ShowGameOverPanel is called when the player has lost their lives. Then it handles the generation of the police men as well as playing the audio clip of being caught.
+    // This has to happen before the gameOverPanel is activaged which is why a coroutine is used.
     IEnumerator ShowGameOverPanel()
     {
         if (!hasSpawned)
@@ -162,11 +165,12 @@ public class ScoreManager : MonoBehaviour
         Time.timeScale = 0; // set the time scale to zero after WaitForSeconds
     }
 
+    // ReloadGame reloads the current scene
     public void ReloadGame()
     {
         SceneManager.LoadScene("SampleScene");
         scoreUI.gameObject.SetActive(true);
         health = 2;
         ScoreManager.isPlayerAlive = true;
-    }
+    } 
 }

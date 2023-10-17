@@ -27,6 +27,7 @@ public class coinGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Uses logic from obstacle generation to instead generate coins. 
         elapsedSeconds += Time.deltaTime;
         if (elapsedSeconds >= spawnStartTime)
         {

@@ -20,7 +20,7 @@ public class coinPicker : MonoBehaviour
     {
 
     }
-
+    // Handles collection detection of coins and increments the scoreCount variable inside of the ScoreManager script placed on the GameManager object
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Coin")

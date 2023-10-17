@@ -7,6 +7,7 @@ using UnityEngine.UI;
 /// <summary>
 /// This script serves as the main functionality for the initial screen upon opening the game. 
 /// </summary>
+
 public class MainMenu : MonoBehaviour
 {
     public GameObject mainMenuPanel;
@@ -42,8 +43,6 @@ public class MainMenu : MonoBehaviour
         {
               case "start":
                 DisablePanels();
-                /*Time.timeScale = 1;
-                ChangeScene("SampleScene");*/
                 startPanel.SetActive(true);
                 break;
             case "fremskridt":

@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// This script works as the main terrain generation, which generates the different terrains that
-/// procedurally appear in front of the player. 
-/// </summary>
+
+// This script works as the main terrain generation, which generates the different terrains that procedurally appear in front of the player.
+ 
+
 
 public class TerrainGenerator : MonoBehaviour
 {   
@@ -97,6 +97,7 @@ public class TerrainGenerator : MonoBehaviour
 
     private int? lastTerrainIndex = null;
 
+    //GenerateTerrain generates the blocks of terrain from the terrainPrefabs array. Then it updates the current length of the level, by adding the length of the just generated block onto the length.
     void GenerateTerrain()
     {
         int randomIndex = Random.Range(0, terrainPrefabs.Length);

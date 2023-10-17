@@ -13,10 +13,12 @@ public class DestroyObstacles : MonoBehaviour
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>(); //Getting audiosource component of player
 
     }
 
+
+    // OnTriggerEnter handles collision and deletion of objects which collide with the player. Furthermore, it generates the sound and the animation which plays when colliding
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Obstacle") || other.gameObject.CompareTag("staticObstacle"))

@@ -1222,9 +1222,10 @@ MonoBehaviour:
   - {fileID: 528139310}
   - {fileID: 1529008785}
   spacing: 2
-  schoolObstacles:
+  obstacles:
   - {fileID: 2260376842356947821, guid: 4ecd52e19bfc16d4da53c7233398c4ac, type: 3}
-  trafficObstacles: []
+  - {fileID: 2265006713436330256, guid: e50ffd91219bddb46bcef68326604128, type: 3}
+  - {fileID: 5652261049229350223, guid: 00aff3286b93f8f4e88a132da96c47d9, type: 3}
   soundObstacles:
   - {fileID: 1939034542094382107, guid: 2c6f946e3ba29ca4f94d0b4135f5091d, type: 3}
   - {fileID: 5717508223820659031, guid: bc88c59c7296b431dbbcd16d5b77e449, type: 3}

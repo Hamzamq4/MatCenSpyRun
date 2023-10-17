@@ -32,6 +32,7 @@ public class ObstacleGenerator : MonoBehaviour
 
     void Update () 
     {
+        //Start a timer and determines which types of obstacle should be instantiated based on a percentage given in the Random.value variable.
         elapsedSeconds += Time.deltaTime;
         if (elapsedSeconds >= spawnStartTime)
         {
@@ -44,7 +45,11 @@ public class ObstacleGenerator : MonoBehaviour
                     {
                         obstacleType = 1;
                         nextSpawn = Time.time + soundObstacleSpacing;
-                    } 
+                    }
+                else
+                {
+                    obstacleType = 0;
+                }
                     
 
                     
@@ -67,6 +72,8 @@ public class ObstacleGenerator : MonoBehaviour
                     GameObject otherObstacleToSpawn = null;
                     GameObject thirdObstacleToSpawn = null;
 
+
+                    // Determines the object to be instantiated in one or potentially two other lanes and generates them accordingly
                     if (spawnOtherLanes) 
                     {
                         Debug.Log("Double forhindring!");
