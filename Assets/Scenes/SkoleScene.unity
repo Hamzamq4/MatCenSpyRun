@@ -1167,8 +1167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   terrainPrefabs:
-  - {fileID: 7028618665781999005, guid: 3feed1b4611d339488e898baf0a6c98e, type: 3}
-  - {fileID: 7028618665781999005, guid: ead553a6db962cb429d71b5fc7ac19e4, type: 3}
+  - {fileID: 7028618665781999005, guid: 66c8ecea534e5d64380ec403e8d679ef, type: 3}
   player: {fileID: 6450177392892860472}
   deleteDistance: 200
   objectsToIgnore:
@@ -2249,7 +2248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sun: {fileID: 705507994}
   secondsInFullDay: 120
-  currentTimeOfDay: 0.257
+  currentTimeOfDay: 0.86
 --- !u!1 &808372290
 GameObject:
   m_ObjectHideFlags: 0
@@ -3228,6 +3227,7 @@ MonoBehaviour:
   gameOverPanel: {fileID: 657400327}
   scoreUI: {fileID: 1539794795}
   fromMenu: {fileID: 0}
+  run: {fileID: 0}
   pause: {fileID: 302200089}
   genoptag: {fileID: 617053577}
   pauseAfslut: {fileID: 1031552265}
