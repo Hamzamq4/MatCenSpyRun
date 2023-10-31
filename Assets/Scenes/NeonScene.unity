@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311924, g: 0.38073963, b: 0.3587269, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1185,6 +1185,7 @@ MonoBehaviour:
   - {fileID: 1312521969}
   terrainLength: 50
   initialTerrain: {fileID: 7028618665781999005, guid: 02181353c76388749b57c726e1955b6a, type: 3}
+  secondaryTerrain: {fileID: 7028618665781999005, guid: 544d45ffc0d9cff459eef5f2d79de815, type: 3}
   distanceThreshold: 120
   obstacleProbability: 0.7
   obstaclePlacementDistance: 3
@@ -1221,8 +1222,7 @@ MonoBehaviour:
   - {fileID: 528139310}
   - {fileID: 1529008785}
   spacing: 2
-  schoolObstacles: []
-  trafficObstacles: []
+  obstacles: []
   soundObstacles:
   - {fileID: 1939034542094382107, guid: 2c6f946e3ba29ca4f94d0b4135f5091d, type: 3}
   - {fileID: 5717508223820659031, guid: bc88c59c7296b431dbbcd16d5b77e449, type: 3}
@@ -3115,6 +3115,7 @@ MonoBehaviour:
   gameOverPanel: {fileID: 657400327}
   scoreUI: {fileID: 1539794795}
   fromMenu: {fileID: 0}
+  run: {fileID: 0}
   pause: {fileID: 302200089}
   genoptag: {fileID: 617053577}
   pauseAfslut: {fileID: 1031552265}

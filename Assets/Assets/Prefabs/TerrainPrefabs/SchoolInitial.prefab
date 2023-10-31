@@ -23750,7 +23750,7 @@ GameObject:
   - component: {fileID: 2510143451815902456}
   - component: {fileID: 1210062652270754106}
   m_Layer: 7
-  m_Name: School1
+  m_Name: SchoolInitial
   m_TagString: schoolcollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
