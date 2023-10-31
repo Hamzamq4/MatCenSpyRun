@@ -1221,8 +1221,10 @@ MonoBehaviour:
   - {fileID: 528139310}
   - {fileID: 1529008785}
   spacing: 2
-  schoolObstacles: []
-  trafficObstacles: []
+  obstacles:
+  - {fileID: 241473963869164114, guid: 28341883d61359a42bc3bfd0fbb3d1a5, type: 3}
+  - {fileID: 1550721664163431712, guid: d8231aa43b8b7e84eae33ac15ecd9fa9, type: 3}
+  - {fileID: 2780445212793738359, guid: 3ab7589346b697c4d9394e46aeb9b450, type: 3}
   soundObstacles:
   - {fileID: 1939034542094382107, guid: 2c6f946e3ba29ca4f94d0b4135f5091d, type: 3}
   - {fileID: 5717508223820659031, guid: bc88c59c7296b431dbbcd16d5b77e449, type: 3}
@@ -3115,6 +3117,7 @@ MonoBehaviour:
   gameOverPanel: {fileID: 657400327}
   scoreUI: {fileID: 1539794795}
   fromMenu: {fileID: 0}
+  run: {fileID: 0}
   pause: {fileID: 302200089}
   genoptag: {fileID: 617053577}
   pauseAfslut: {fileID: 1031552265}
