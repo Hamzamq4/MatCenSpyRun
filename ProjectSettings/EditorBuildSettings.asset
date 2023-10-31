@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VikingScene.unity
     guid: 6f06b99282608cc408cdcb0c864df4d3
+  - enabled: 1
+    path: Assets/Scenes/NeonScene.unity
+    guid: 76136ab7e92e5da42ac51642d3d90d76
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 8492f99241b25ea40b949e167b8c40ad, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: e8f5a557a6e4b844f9a0454027f1ca91, type: 2}
