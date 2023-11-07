@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1281,7 +1281,7 @@ MonoBehaviour:
   - {fileID: 528139310}
   - {fileID: 1529008785}
   spacing: 11
-  powerUp: {fileID: 5928858169845282320, guid: 2d7e692e2ec844613ab4bf6d978582de, type: 3}
+  powerUp: {fileID: 4845816825048791106, guid: d333b548bc138354e893d3060733ecfb, type: 3}
   spawnStartTime: 3
 --- !u!1 &600213100
 GameObject:
