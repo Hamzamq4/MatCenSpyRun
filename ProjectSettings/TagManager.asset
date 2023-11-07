@@ -16,7 +16,6 @@ TagManager:
   - GameManager
   - Coin
   - staticObstacle
-  - powerUp
   layers:
   - Default
   - TransparentFX
