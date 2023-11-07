@@ -46,10 +46,11 @@ public class ObstacleGenerator : MonoBehaviour
                         obstacleType = 1;
                         nextSpawn = Time.time + soundObstacleSpacing;
                     }
-                else
-                {
-                    obstacleType = 0;
-                }
+                    else
+                    {
+                        obstacleType = 0;
+                        nextSpawn = Time.time + spacing;
+                    }
                     
 
                     
@@ -87,9 +88,8 @@ public class ObstacleGenerator : MonoBehaviour
                         thirdObstacleToSpawn = obstacles[Random.Range(0, obstacles.Length)];
                         otherObstacleToSpawn = obstacles[Random.Range(0, obstacles.Length)];
                         
-                        
-                        Instantiate(thirdObstacleToSpawn, availableLanes[0].position + new Vector3(-1.6f, 4.181f, player.position.z + 60f), Quaternion.identity);
                         Instantiate(otherObstacleToSpawn, otherLane.position + new Vector3(-1.6f, 4.181f, player.position.z + 60f), Quaternion.identity);
+                        Instantiate(thirdObstacleToSpawn, availableLanes[0].position + new Vector3(-1.6f, 4.181f, player.position.z + 60f), Quaternion.identity);
                         spawnOtherLanes = false;
                     }
                 }   

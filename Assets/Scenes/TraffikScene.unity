@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1187,6 +1187,7 @@ MonoBehaviour:
   - {fileID: 1312521969}
   terrainLength: 50
   initialTerrain: {fileID: 7028618665781999005, guid: 0584d015196b99a41b2b499ee38acdcc, type: 3}
+  secondaryTerrain: {fileID: 7028618665781999005, guid: b42994c1754c92d4886d88f26355b649, type: 3}
   distanceThreshold: 120
   obstacleProbability: 0.7
   obstaclePlacementDistance: 3
@@ -3248,6 +3249,7 @@ MonoBehaviour:
   gameOverPanel: {fileID: 657400327}
   scoreUI: {fileID: 1539794795}
   fromMenu: {fileID: 0}
+  run: {fileID: 0}
   pause: {fileID: 302200089}
   genoptag: {fileID: 617053577}
   pauseAfslut: {fileID: 1031552265}

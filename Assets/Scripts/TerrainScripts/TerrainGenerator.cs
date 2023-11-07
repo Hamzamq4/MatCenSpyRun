@@ -21,6 +21,7 @@ public class TerrainGenerator : MonoBehaviour
 
     // starting terrain prefab
     public GameObject initialTerrain;
+    public GameObject secondaryTerrain;
 
     // reference to the current terrain section
     private GameObject currentTerrain;
@@ -49,6 +50,10 @@ public class TerrainGenerator : MonoBehaviour
         
         // sets current terrain length to length of the initial terrain
         currentTerrainLength = terrainLength;
+
+        currentTerrain = Instantiate(secondaryTerrain, new Vector3(0, 0, currentTerrainLength + 50), Quaternion.identity);
+
+        currentTerrainLength += terrainLength;
     }
 
     void Update()
@@ -100,13 +105,17 @@ public class TerrainGenerator : MonoBehaviour
     //GenerateTerrain generates the blocks of terrain from the terrainPrefabs array. Then it updates the current length of the level, by adding the length of the just generated block onto the length.
     void GenerateTerrain()
     {
-        int randomIndex = Random.Range(0, terrainPrefabs.Length);
+        int randomIndex;
+        do
+        {
+            randomIndex = Random.Range(0, terrainPrefabs.Length);
+        } while (lastTerrainIndex.HasValue && terrainPrefabs[randomIndex].name == "Terrain3" && terrainPrefabs[randomIndex].name == "Terrain4" && lastTerrainIndex.Value == randomIndex);
     
         // update lastTerrainIndex to keep track of the previous terrain generated
         lastTerrainIndex = randomIndex;
 
         // instantiate the new terrain prefab at the appropriate position
-        GameObject newTerrain = Instantiate(terrainPrefabs[randomIndex], new Vector3(0, 0, currentTerrainLength + 50), Quaternion.identity);
+        GameObject newTerrain = Instantiate(terrainPrefabs[randomIndex], new Vector3(0, 0, currentTerrainLength + 100), Quaternion.identity);
 
         // updates the current terrain length
         currentTerrainLength += terrainLength + 50;
