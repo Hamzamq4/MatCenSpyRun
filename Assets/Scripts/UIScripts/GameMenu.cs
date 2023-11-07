@@ -14,7 +14,7 @@ public class GameMenu : MonoBehaviour
     public GameObject scoreUI;
     public GameObject fromMenu;
     public Animation run;
-    private Animator pAnimator;
+    //private Animator pAnimator;
 
 
     public Button pause, genoptag, pauseAfslut, tryAgain, gameOverAfslut;
@@ -39,7 +39,6 @@ public class GameMenu : MonoBehaviour
     // ChangePanel handles the UI interactions based on the panelName string. Based on the button selected, it either disables the panels and continues the game, reloads the current scene or loads the menu scene
     public void ChangePanel(string panelName)
     {
-        string currentSceneName = SceneManager.GetActiveScene().name;
         switch (panelName)
         {
             case "pause":
@@ -68,14 +67,18 @@ public class GameMenu : MonoBehaviour
                 Destroy(fromMenu);
                 DisablePanels();
                 Time.timeScale = 1;
-                SceneManager.LoadScene(currentSceneName);
+                SceneManager.LoadScene("SampleScene");
                 scoreUI.gameObject.SetActive(true);
                 ScoreManager.health = 2;
-                ResetDeath();
+                ScoreManager.isPlayerAlive = true;
                 break;
             case "tryAgainAfslut":
                 Debug.Log("TryAgainAfslut");
-                ResetDeath();
+                GameObject player = GameObject.FindWithTag("Player");
+                Animator playerAnimator = player.GetComponent<Animator>();
+                //playerAnimator.ResetTrigger("Death_b");
+                playerAnimator.Rebind();
+                playerAnimator.Update(0f);
                 DisablePanels();
                 Time.timeScale = 1;
                 SceneManager.LoadScene("MenuScene");
@@ -84,14 +87,4 @@ public class GameMenu : MonoBehaviour
                 break;
         }
     }
-
-    private void ResetDeath()
-    {
-        GameObject player = GameObject.FindWithTag("Player");
-        Animator playerAnimator = player.GetComponent<Animator>();
-        //playerAnimator.ResetTrigger("Death_b");
-        playerAnimator.SetBool("Death_b", false);
-        ScoreManager.isPlayerAlive = true;
-    }
-       
 }
