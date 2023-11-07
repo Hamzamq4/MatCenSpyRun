@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class coinGenerator : MonoBehaviour
+public class powerUpGenerator : MonoBehaviour
 {
     public Transform[] lanes; // the three lanes
 
     public float spacing = 5f;
 
-    public GameObject coin;
+    public GameObject powerUp;
 
     private float nextSpawn = 1f;
 
@@ -34,7 +34,7 @@ public class coinGenerator : MonoBehaviour
             if (Time.time > nextSpawn) 
             {
                 int laneIndex = Random.Range(0, 3);
-                Instantiate(coin, lanes[laneIndex].position + new Vector3(-1.6f, 5.5f, player.position.z + 60f), Quaternion.identity);
+                Instantiate(powerUp, lanes[laneIndex].position + new Vector3(-1.6f, 5.5f, player.position.z + 60f), Quaternion.identity);
 
                 nextSpawn = Time.time + spacing;
             }
