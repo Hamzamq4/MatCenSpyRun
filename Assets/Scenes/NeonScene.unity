@@ -1345,7 +1345,9 @@ MonoBehaviour:
   scoreCount: 0
   highScoreCount: 0
   pointsPerSecond: 1
+  pointsMultiplier: 0
   scoreIncreasing: 1
+  defaultMultiplier: 1
   zeroLives: {fileID: 2057513487}
   oneLife: {fileID: 937654652}
   twoLives: {fileID: 808372290}
