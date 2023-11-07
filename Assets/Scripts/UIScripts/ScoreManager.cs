@@ -27,7 +27,11 @@ public class ScoreManager : MonoBehaviour
 
     public float pointsPerSecond;
 
+    public float pointsMultiplier;
+
     public bool scoreIncreasing;
+
+    public bool defaultMultiplier = true;
 
     private string scoreFilePath;
 
@@ -107,10 +111,27 @@ public class ScoreManager : MonoBehaviour
                 break;
         }
 
-        if (scoreIncreasing)
+        // When player has picked up point multiplier object
+        if(defaultMultiplier)
         {
-            scoreCount += pointsPerSecond * Time.deltaTime;
+            if (scoreIncreasing)
+            {
+                
+                scoreCount += pointsPerSecond * Time.deltaTime;
+
+            }
         }
+        // otherwise when game is at default state
+        else
+        {
+            if (scoreIncreasing)
+            {
+                scoreCount += pointsPerSecond * pointsMultiplier * Time.deltaTime;
+                Debug.Log(scoreCount);
+            }
+            
+        }
+        
 
         if (scoreCount > highScoreCount)
         {
