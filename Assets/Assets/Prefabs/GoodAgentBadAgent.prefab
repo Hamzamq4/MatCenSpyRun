@@ -70,14 +70,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c7985476b692c4453978dfe42e7641af, type: 3}
   - {fileID: 8300000, guid: d3c8f215686024db1898a4fb052301f6, type: 3}
   badGuyLeft:
-  - {fileID: 8300000, guid: b8e954b1c016b43d2ac324f5c92a9abf, type: 3}
-  - {fileID: 8300000, guid: 9fe071bbcbf514fa49ba9e0c2cc07f5a, type: 3}
+  - {fileID: 8300000, guid: 52238f2aa3b5b15499752fd1b5e147bd, type: 3}
   badGuyMiddle:
-  - {fileID: 8300000, guid: db879be7a9dfb43cab5925c64b43b599, type: 3}
-  - {fileID: 8300000, guid: d973afd0251a743ab9f4222e096cfe9c, type: 3}
+  - {fileID: 8300000, guid: f1b953c4dd65f4546a89ea6f978f0ae9, type: 3}
   badGuyRight:
-  - {fileID: 8300000, guid: eebb540e2ebd74f24a496bc3b1d9c518, type: 3}
-  - {fileID: 8300000, guid: d570b6dc3d4b942db815097e62365449, type: 3}
+  - {fileID: 8300000, guid: b4374f31bdcad664e8ccbcb7f05bdad3, type: 3}
   reactionTime: 7
 --- !u!82 &3482742823152455133
 AudioSource:

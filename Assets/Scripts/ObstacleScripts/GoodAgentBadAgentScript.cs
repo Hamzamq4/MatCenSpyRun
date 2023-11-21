@@ -70,11 +70,11 @@ public class GoodAgentBadAgentScript : MonoBehaviour
 
             if (badGuyRandom == 0)
             {
-                leftOrRight[Random.Range(0,leftOrRight.Count)].PlayOneShot(badGuyRight[Random.Range(0 , badGuyRight.Length)], 5f);
+                leftOrRight[Random.Range(0,leftOrRight.Count)].PlayOneShot(badGuyRight[Random.Range(0 , badGuyRight.Length)], 1f);
             }
             else
             {
-                leftOrRight[Random.Range(0,leftOrRight.Count)].PlayOneShot(badGuyMiddle[Random.Range(0 , badGuyMiddle.Length)], 5f);
+                leftOrRight[Random.Range(0,leftOrRight.Count)].PlayOneShot(badGuyMiddle[Random.Range(0 , badGuyMiddle.Length)], 1f);
             }
 
             if (Time.time > reactionTime)
@@ -98,11 +98,11 @@ public class GoodAgentBadAgentScript : MonoBehaviour
             int badGuyRandom = Random.Range(0, 2);
             if (badGuyRandom == 0)
             {
-                leftOrRight[Random.Range(0,leftOrRight.Count)].PlayOneShot(badGuyLeft[Random.Range(0 , badGuyLeft.Length)], 5f); 
+                leftOrRight[Random.Range(0,leftOrRight.Count)].PlayOneShot(badGuyLeft[Random.Range(0 , badGuyLeft.Length)], 1f); 
             }
             else
             {
-                leftOrRight[Random.Range(0,leftOrRight.Count)].PlayOneShot(badGuyRight[Random.Range(0 , badGuyRight.Length)], 5f);
+                leftOrRight[Random.Range(0,leftOrRight.Count)].PlayOneShot(badGuyRight[Random.Range(0 , badGuyRight.Length)], 1f);
             }
         }
         else
@@ -119,11 +119,11 @@ public class GoodAgentBadAgentScript : MonoBehaviour
             int badGuyRandom = Random.Range(0, 2);
             if (badGuyRandom == 0)
             {
-                leftOrRight[Random.Range(0,leftOrRight.Count)].PlayOneShot(badGuyLeft[Random.Range(0 , badGuyLeft.Length)], 5f);
+                leftOrRight[Random.Range(0,leftOrRight.Count)].PlayOneShot(badGuyLeft[Random.Range(0 , badGuyLeft.Length)], 1f);
             }
             else
             {
-                leftOrRight[Random.Range(0,leftOrRight.Count)].PlayOneShot(badGuyMiddle[Random.Range(0 , badGuyMiddle.Length)], 5f);
+                leftOrRight[Random.Range(0,leftOrRight.Count)].PlayOneShot(badGuyMiddle[Random.Range(0 , badGuyMiddle.Length)], 1f);
             }
 
         }
