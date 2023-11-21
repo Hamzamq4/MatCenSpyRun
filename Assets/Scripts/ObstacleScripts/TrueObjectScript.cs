@@ -31,13 +31,18 @@ public class TrueObjectScript : MonoBehaviour
             if (other.gameObject.tag == "Player")
             {
                 audioSource.PlayOneShot(feedbackClip[Random.Range(0, feedbackClip.Length)]);
+                
+                TrueObjectScript[] scriptInstances = FindObjectsOfType<TrueObjectScript>();
+                foreach (TrueObjectScript scriptInstance in scriptInstances) 
+                {
+                    // Access the GameObject with the script
+                    GameObject wrongObject = scriptInstance.gameObject;
+                    Destroy(wrongObject);
+                }
                 Destroy(gameObject);
                 Debug.Log("Player survived");   
             }
-            
-            // You could add additional code here to notify the player or update the game state
         }
-
     }
 }
 
