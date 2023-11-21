@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// This script works as the main terrain generation, which generates the different terrains that
-/// procedurally appear in front of the player. 
-/// </summary>
+
+// This script works as the main terrain generation, which generates the different terrains that procedurally appear in front of the player.
+ 
+
 
 public class TerrainGenerator : MonoBehaviour
 {   
@@ -15,12 +15,13 @@ public class TerrainGenerator : MonoBehaviour
     public float deleteDistance = 10f; // distance behind the player where the objects will be deleted
 
     private List<GameObject> objectsToDestroy = new List<GameObject>(); // list of objects to be destroyed
-    public GameObject[] objectsToIgnore; // array of objects that shouldnt be deleted
+    public List<GameObject> objectsToIgnore; // array of objects that shouldnt be deleted
 
     public float terrainLength = 50f;
 
     // starting terrain prefab
     public GameObject initialTerrain;
+    public GameObject secondaryTerrain;
 
     // reference to the current terrain section
     private GameObject currentTerrain;
@@ -39,11 +40,20 @@ public class TerrainGenerator : MonoBehaviour
 
     void Start()
     {
+        GameObject characterGender = GameObject.Find("CharacterDataTransfer");
+
+        objectsToIgnore.Add(characterGender);
+
+
         // instantiate the initial terrain prefab at the starting position
         currentTerrain = Instantiate(initialTerrain, Vector3.zero, Quaternion.identity);
         
         // sets current terrain length to length of the initial terrain
         currentTerrainLength = terrainLength;
+
+        currentTerrain = Instantiate(secondaryTerrain, new Vector3(0, 0, currentTerrainLength + 50), Quaternion.identity);
+
+        currentTerrainLength += terrainLength;
     }
 
     void Update()
@@ -92,15 +102,20 @@ public class TerrainGenerator : MonoBehaviour
 
     private int? lastTerrainIndex = null;
 
+    //GenerateTerrain generates the blocks of terrain from the terrainPrefabs array. Then it updates the current length of the level, by adding the length of the just generated block onto the length.
     void GenerateTerrain()
     {
-        int randomIndex = Random.Range(0, terrainPrefabs.Length);
+        int randomIndex;
+        do
+        {
+            randomIndex = Random.Range(0, terrainPrefabs.Length);
+        } while (lastTerrainIndex.HasValue && terrainPrefabs[randomIndex].name == "Terrain3" && terrainPrefabs[randomIndex].name == "Terrain4" && lastTerrainIndex.Value == randomIndex);
     
         // update lastTerrainIndex to keep track of the previous terrain generated
         lastTerrainIndex = randomIndex;
 
         // instantiate the new terrain prefab at the appropriate position
-        GameObject newTerrain = Instantiate(terrainPrefabs[randomIndex], new Vector3(0, 0, currentTerrainLength + 50), Quaternion.identity);
+        GameObject newTerrain = Instantiate(terrainPrefabs[randomIndex], new Vector3(0, 0, currentTerrainLength + 100), Quaternion.identity);
 
         // updates the current terrain length
         currentTerrainLength += terrainLength + 50;

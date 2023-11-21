@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
     {
         inputManager = GetComponent<inputManager>();
     }
-
+    //Activates swipe functions from "PlayerControls" in the "TouchSetupScripts" folder
     private void OnEnable()
     {
         inputManager.OnSwipeLeft += OnSwipeLeft;
@@ -47,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
         inputManager.OnSwipeRight -= OnSwipeRight;
         inputManager.OnSwipeUp -= OnSwipeUp;
     }
+
     void Start()
     {
         cc = gameObject.GetComponent<CharacterController>();
@@ -59,14 +60,17 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        //Detects alive state from "ScoreManager" script, if player is "dead" it plays death animation. 
         if (!ScoreManager.isPlayerAlive)
         {
             pAnimator.SetTrigger("Death_b");
             return;
         }
+        //Following if statements administer the positions of the player on the 3 different lanes on each terrain.
         Vector3 pos = gameObject.transform.position;
         if (!line.Equals(targetLine))
         {
+            //left lane is set to -4.1 on the x-axis
             if (targetLine == 0 && pos.x < -4.1)
             {
                 gameObject.transform.position = new Vector3(-2, pos.y, pos.z);
@@ -74,6 +78,7 @@ public class PlayerMovement : MonoBehaviour
                 movec.x = 0;
                 canmove = true;
             }
+            //middle lane is set to 0
             else if (targetLine == 1 && (pos.x > 0 || pos.x < 0))
             {
                 if (line == 0 && pos.x > 0)
@@ -91,6 +96,7 @@ public class PlayerMovement : MonoBehaviour
                     canmove = true;
                 }
             }
+            //right lane is set to 4.1 on the x-axis
             else if (targetLine == 2 && pos.x > 4.1)
             {
                 gameObject.transform.position = new Vector3(2, pos.y, pos.z);
@@ -112,13 +118,13 @@ public class PlayerMovement : MonoBehaviour
 
         checkInputs();
 
-        // added code for speed increase
+        // added code for gradual speed increase, with a maximum speed threshhold of 25 units (listed in beginning of script)
         if (speed < maxSpeed)
         {
             speed += speedIncreasePerSecond * Time.deltaTime;
         }
     }
-
+    //Script for jumping funtionality, that activates when "OnSwipeUp" is called. Resets animation trigger when method is completed. 
     IEnumerator Jump()
     {
         Debug.Log("Jump animation started");
@@ -136,7 +142,7 @@ public class PlayerMovement : MonoBehaviour
         pAnimator.ResetTrigger("Jump_b"); // Reset the Jump_b animation trigger
         movec.y = 0.0f;
     }
-
+    //Makes arrowkeys able to control the character movements as swipes. 
     void checkInputs()
     {
         if (Input.GetKeyDown(KeyCode.LeftArrow) && canmove && line > 0)
@@ -154,7 +160,7 @@ public class PlayerMovement : MonoBehaviour
 
         }
     }
-
+    // Checks current lane and which lane is possible to switch to.
     private void OnSwipeLeft(){
 
         if (canmove && line > 0)
@@ -165,7 +171,7 @@ public class PlayerMovement : MonoBehaviour
             movec.x = -15f;
         }   
     }
-
+    // Checks current lane and which lane is possible to switch to.
     private void OnSwipeRight(){
 
         if (canmove && line < 2)
@@ -176,7 +182,7 @@ public class PlayerMovement : MonoBehaviour
             movec.x = 15f;
         }
     }
-
+    //Sets jumping animation and method to true. 
     private void OnSwipeUp(){
 
         if (cc.isGrounded)
@@ -184,6 +190,7 @@ public class PlayerMovement : MonoBehaviour
             bool isJumping = true;
             if (isJumping)
             {
+                //Activates jump animation.
                 pAnimator.SetTrigger("Jump_b");
             }
 
@@ -191,27 +198,6 @@ public class PlayerMovement : MonoBehaviour
 
             Debug.Log("Up swipe detected");
             return;
-        }
-    }
-    void OnTriggerEnter(Collider other)
-    {
-        
-        if (other.gameObject.tag == "trafficcollider")
-        {
-            player.layer = trafficLayer;
-        }
-        else if (other.gameObject.tag == "schoolcollider")
-        {
-            player.layer = schoolLayer;
-        }
-        
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject == player)
-        {
-            player.layer = LayerMask.NameToLayer("Default");
         }
     }
 }

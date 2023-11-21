@@ -36,6 +36,7 @@ public class CameraAttach : MonoBehaviour
         HandleTerrainOffset();
     }
 
+    //HandleTranslation handles the positioning of the camera in relation to the position of the player in world space, and the smooth interpolation of the camera. 
 
     private void HandleTranslation()
     {
@@ -43,13 +44,14 @@ public class CameraAttach : MonoBehaviour
         transform.position = Vector3.Lerp(transform.position, targetPosition, translateSpeed * Time.deltaTime);
     }
 
+    //HandleRotation handles the rotation of the camera in relation to the position of the player in world space, and the smooth interpolation of the camera. 
     private void HandleRotation()
     {
         var direction = target.position - transform.position;
         var rotation = Quaternion.LookRotation(direction, (Vector3.up));
         transform.rotation = Quaternion.Lerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
     }
-
+    //HandleTerrainOffset detects the upcoming terrain layermask and changes the camera offset to the values stated in "schoolTerrainOffset", and reverts back when it turns back to the original terrain.
     private void HandleTerrainOffset()
     {
         RaycastHit hit;
@@ -61,22 +63,5 @@ public class CameraAttach : MonoBehaviour
         {
             offset = originalOffset;
         }
-    }
-
-    IEnumerator Waiter()
-    {
-        yield return new WaitForSeconds(2);
-        Countdown();
-    }
-
-    public void SpeedBoostZoom()
-    {
-        cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, 100f, 1f);
-    }
-
-    void Countdown()
-    {
-        while (cam.fieldOfView > 60)
-            cam.fieldOfView -= 0.2f;
     }
 }

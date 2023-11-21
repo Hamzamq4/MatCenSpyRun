@@ -1,5 +1,9 @@
 using UnityEngine;
 
+/// <summary>
+/// This script creates a sun that revolves around the scene to simulate a realistic day/night cycle. 
+/// </summary>
+
 public class TimeOfDay : MonoBehaviour
 {
     public Light sun; // Assign the directional light that acts as the sun in the inspector
@@ -28,7 +32,6 @@ public class TimeOfDay : MonoBehaviour
             {
                 streetlight.SetActive(true); // Enable the streetlights
             }
-            // Debug.Log("Turn ON streetlights");
         }
         else
         {
@@ -36,10 +39,9 @@ public class TimeOfDay : MonoBehaviour
             {
                 streetlight.SetActive(false); // Disable the streetlights
             }
-            // Debug.Log("Turn OFF streetlights");
         }
     }
-
+    // Rotates the light source around the scene 
     void UpdateSun()
     {
         sun.transform.localRotation = Quaternion.Euler((currentTimeOfDay * 360f) - 90, 170, 0);

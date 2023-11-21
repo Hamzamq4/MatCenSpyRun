@@ -27,7 +27,11 @@ public class ScoreManager : MonoBehaviour
 
     public float pointsPerSecond;
 
+    public float pointsMultiplier;
+
     public bool scoreIncreasing;
+
+    public bool defaultMultiplier = true;
 
     private string scoreFilePath;
 
@@ -103,14 +107,31 @@ public class ScoreManager : MonoBehaviour
                     isPlayerAlive = false;
                     StartCoroutine(ShowGameOverPanel());
                 }
-                zeroLives.gameObject.SetActive(false);
+                zeroLives.gameObject.SetActive(true);
                 break;
         }
 
-        if (scoreIncreasing)
+        // When player has picked up point multiplier object
+        if(defaultMultiplier)
         {
-            scoreCount += pointsPerSecond * Time.deltaTime;
+            if (scoreIncreasing)
+            {
+                
+                scoreCount += pointsPerSecond * Time.deltaTime;
+
+            }
         }
+        // otherwise when game is at default state
+        else
+        {
+            if (scoreIncreasing)
+            {
+                scoreCount += pointsPerSecond * pointsMultiplier * Time.deltaTime;
+                Debug.Log(scoreCount);
+            }
+            
+        }
+        
 
         if (scoreCount > highScoreCount)
         {
@@ -124,6 +145,7 @@ public class ScoreManager : MonoBehaviour
 
     }
 
+    // Refills lives based on timer given in the refillLifeTime variable
     IEnumerator RefillLives()
     {
         yield return new WaitForSeconds(refillLifeTime);
@@ -136,6 +158,8 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
+    // ShowGameOverPanel is called when the player has lost their lives. Then it handles the generation of the police men as well as playing the audio clip of being caught.
+    // This has to happen before the gameOverPanel is activaged which is why a coroutine is used.
     IEnumerator ShowGameOverPanel()
     {
         if (!hasSpawned)
@@ -162,11 +186,12 @@ public class ScoreManager : MonoBehaviour
         Time.timeScale = 0; // set the time scale to zero after WaitForSeconds
     }
 
+    // ReloadGame reloads the current scene
     public void ReloadGame()
     {
         SceneManager.LoadScene("SampleScene");
         scoreUI.gameObject.SetActive(true);
         health = 2;
         ScoreManager.isPlayerAlive = true;
-    }
+    } 
 }

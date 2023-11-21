@@ -5,6 +5,8 @@ using UnityEngine;
 public class SpatialAudioObstacle : MonoBehaviour
 {
     public GameObject[] obstacles;
+
+    public GameObject laserSoundObject;
     public Transform spatialAudio;
 
     private Transform[] laneTransforms;
@@ -52,5 +54,6 @@ public class SpatialAudioObstacle : MonoBehaviour
         int randomLaneIndex = Random.Range(0, laneTransforms.Length);
         Vector3 objectPosition = new Vector3(laneTransforms[randomLaneIndex].position.x - 1.8f, 4.5f, spatialAudio.position.z - 30f);
         Instantiate(obstacles[Random.Range(0, obstacles.Length)], objectPosition, Quaternion.identity);
+        Instantiate(laserSoundObject, objectPosition, Quaternion.identity);
     }
 }

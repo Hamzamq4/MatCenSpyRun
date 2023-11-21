@@ -4,7 +4,8 @@ using UnityEngine;
 using System;
 using UnityEngine.InputSystem;
 
-//https://getalow.com/unity-engine/swipe-detection-tap-and-multitap-new-input-system-custom-input-manager-unity-tutorial/19 
+// This script manages the input of the player. This website explains this script:
+// https://getalow.com/unity-engine/swipe-detection-tap-and-multitap-new-input-system-custom-input-manager-unity-tutorial/19 
 public class inputManager : MonoBehaviour
 {
     #region Events
