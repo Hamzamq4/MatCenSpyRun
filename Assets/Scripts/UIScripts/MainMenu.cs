@@ -14,10 +14,14 @@ public class MainMenu : MonoBehaviour
     public GameObject aboutPanel;
     public GameObject characterPanel;
     public GameObject howToPanel;
+    public GameObject howTo2Panel;
+    public GameObject howTo3Panel;
+    public GameObject howTo4Panel;
+    public GameObject howTo5Panel;
     public GameObject descriptionPanel;
     public GameObject startPanel;
 
-    public Button start, fremskridt, indstillinger, traffik, skole, snebjerge, about, character, howTo, description;
+    public Button start, fremskridt, indstillinger, traffik, skole, snebjerge, about, character, howTo, howTo2, howTo3, howTo4, howTo5, description;
 
     void Start() // adds listeners that detect when a click event occurs
     {
@@ -25,6 +29,10 @@ public class MainMenu : MonoBehaviour
         about.onClick.AddListener(delegate { ChangePanel("about"); });
         character.onClick.AddListener(delegate { ChangePanel("character"); });
         howTo.onClick.AddListener(delegate { ChangePanel("howTo"); });
+        howTo2.onClick.AddListener(delegate { ChangePanel("howTo2"); });
+        howTo2.onClick.AddListener(delegate { ChangePanel("howTo3"); });
+        howTo2.onClick.AddListener(delegate { ChangePanel("howTo4"); });
+        howTo2.onClick.AddListener(delegate { ChangePanel("howTo5"); });
         description.onClick.AddListener(delegate { ChangePanel("description"); });
 
         traffik.onClick.AddListener(delegate { ChangeScene("traffik");});
@@ -41,6 +49,10 @@ public class MainMenu : MonoBehaviour
         characterPanel.SetActive(false);
         startPanel.SetActive(false);
         howToPanel.SetActive(false);
+        howTo2Panel.SetActive(false);
+        howTo3Panel.SetActive(false);
+        howTo4Panel.SetActive(false);
+        howTo5Panel.SetActive(false);
         descriptionPanel.SetActive(false);
     }
 
@@ -64,6 +76,22 @@ public class MainMenu : MonoBehaviour
             case "howTo":
                 DisablePanels();
                 howToPanel.SetActive(true);
+                break;
+            case "howTo2":
+                DisablePanels();
+                howTo2Panel.SetActive(true);
+                break;
+            case "howTo3":
+                DisablePanels();
+                howTo3Panel.SetActive(true);
+                break;
+            case "howTo4":
+                DisablePanels();
+                howTo4Panel.SetActive(true);
+                break;
+            case "howTo5":
+                DisablePanels();
+                howTo5Panel.SetActive(true);
                 break;
             case "description":
                 DisablePanels();
