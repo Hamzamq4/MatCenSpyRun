@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641228, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &70744295 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7214579802272487864, guid: 2ad539350906a437290df2784add3850, type: 3}
+  m_PrefabInstance: {fileID: 705769198}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &152932380
 GameObject:
   m_ObjectHideFlags: 0
@@ -1079,9 +1084,9 @@ MonoBehaviour:
   pointsMultiplier: 0
   scoreIncreasing: 1
   defaultMultiplier: 1
-  zeroLives: {fileID: 0}
-  oneLife: {fileID: 0}
-  twoLives: {fileID: 0}
+  zeroLives: {fileID: 690253988}
+  oneLife: {fileID: 1508147892}
+  twoLives: {fileID: 70744295}
   gameOverPanel: {fileID: 657400327}
   refillLifeTime: 15
   enemyDeathSpawnPrefab: {fileID: 2260376842356947821, guid: d44815b6a70913d4b9797a8fb0cc8733, type: 3}
@@ -1986,6 +1991,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686204060}
   m_CullTransparentMesh: 1
+--- !u!1 &690253988 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7214579802069622134, guid: 2ad539350906a437290df2784add3850, type: 3}
+  m_PrefabInstance: {fileID: 705769198}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &705769198
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2912,6 +2922,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1508147892 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7214579804092043686, guid: 2ad539350906a437290df2784add3850, type: 3}
+  m_PrefabInstance: {fileID: 705769198}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1529008781
 GameObject:
   m_ObjectHideFlags: 0

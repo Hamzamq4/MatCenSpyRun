@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641228, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -227,6 +227,21 @@ PrefabInstance:
 --- !u!224 &74754159 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7214579803372975200, guid: 2ad539350906a437290df2784add3850, type: 3}
+  m_PrefabInstance: {fileID: 74754158}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &74754160 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7214579802069622134, guid: 2ad539350906a437290df2784add3850, type: 3}
+  m_PrefabInstance: {fileID: 74754158}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &74754161 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7214579804092043686, guid: 2ad539350906a437290df2784add3850, type: 3}
+  m_PrefabInstance: {fileID: 74754158}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &74754162 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7214579802272487864, guid: 2ad539350906a437290df2784add3850, type: 3}
   m_PrefabInstance: {fileID: 74754158}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &152932380
@@ -1092,9 +1107,9 @@ MonoBehaviour:
   pointsMultiplier: 2
   scoreIncreasing: 1
   defaultMultiplier: 1
-  zeroLives: {fileID: 0}
-  oneLife: {fileID: 0}
-  twoLives: {fileID: 0}
+  zeroLives: {fileID: 74754160}
+  oneLife: {fileID: 74754161}
+  twoLives: {fileID: 74754162}
   gameOverPanel: {fileID: 657400327}
   refillLifeTime: 15
   enemyDeathSpawnPrefab: {fileID: 2260376842356947821, guid: d44815b6a70913d4b9797a8fb0cc8733, type: 3}
