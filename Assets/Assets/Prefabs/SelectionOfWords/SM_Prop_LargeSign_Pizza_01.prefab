@@ -119,6 +119,7 @@ MonoBehaviour:
   feedbackClip:
   - {fileID: 8300000, guid: fee8e36b580374c21bb7dcbb158fca97, type: 3}
   - {fileID: 8300000, guid: a0a11b4329bd94c46bcb3538b3b7d5d8, type: 3}
+  particleSystemPrefab: {fileID: 1804206099813350, guid: 4dd02b5f854b6c84990fbeb810abffe4, type: 3}
 --- !u!65 &-4627199559993646141
 BoxCollider:
   m_ObjectHideFlags: 0

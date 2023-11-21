@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 186572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -119,6 +119,7 @@ MonoBehaviour:
   feedbackClip:
   - {fileID: 8300000, guid: fee8e36b580374c21bb7dcbb158fca97, type: 3}
   - {fileID: 8300000, guid: a0a11b4329bd94c46bcb3538b3b7d5d8, type: 3}
+  particleSystemPrefab: {fileID: 1804206099813350, guid: 4dd02b5f854b6c84990fbeb810abffe4, type: 3}
 --- !u!65 &-4376761736128518880
 BoxCollider:
   m_ObjectHideFlags: 0

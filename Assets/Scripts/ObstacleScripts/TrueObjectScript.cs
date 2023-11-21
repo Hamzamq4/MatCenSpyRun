@@ -9,6 +9,8 @@ public class TrueObjectScript : MonoBehaviour
     public AudioClip audioclip;
     public AudioClip[] feedbackClip;
 
+    public GameObject particleSystemPrefab;
+
     void Start() 
     {
     GameObject radio = GameObject.FindGameObjectWithTag("Radio");
@@ -37,6 +39,7 @@ public class TrueObjectScript : MonoBehaviour
                 {
                     // Access the GameObject with the script
                     GameObject wrongObject = scriptInstance.gameObject;
+                    Instantiate(particleSystemPrefab, wrongObject.gameObject.transform.position, Quaternion.identity);
                     Destroy(wrongObject);
                 }
                 Destroy(gameObject);
