@@ -29197,6 +29197,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2510143451815902456}
     m_Modifications:
+    - target: {fileID: 1172936552041545312, guid: 3a10427c00e308441b68d6f3a210e6a3, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1934769491164715146, guid: 3a10427c00e308441b68d6f3a210e6a3, type: 3}
       propertyPath: m_TagString
       value: streetlights
@@ -29212,6 +29216,14 @@ PrefabInstance:
     - target: {fileID: 2170324072820313882, guid: 3a10427c00e308441b68d6f3a210e6a3, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401024108839441430, guid: 3a10427c00e308441b68d6f3a210e6a3, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3009252034094138187, guid: 3a10427c00e308441b68d6f3a210e6a3, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3082475550702848495, guid: 3a10427c00e308441b68d6f3a210e6a3, type: 3}
       propertyPath: m_RootOrder
@@ -29265,6 +29277,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 3683925184312631429, guid: 3a10427c00e308441b68d6f3a210e6a3, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4431840417774581407, guid: 3a10427c00e308441b68d6f3a210e6a3, type: 3}
       propertyPath: m_TagString
       value: streetlights
@@ -29281,6 +29297,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 5955019867583746101, guid: 3a10427c00e308441b68d6f3a210e6a3, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7563615121482663958, guid: 3a10427c00e308441b68d6f3a210e6a3, type: 3}
       propertyPath: m_TagString
       value: streetlights
@@ -29288,6 +29308,14 @@ PrefabInstance:
     - target: {fileID: 7563615121482663958, guid: 3a10427c00e308441b68d6f3a210e6a3, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 7706234346340660939, guid: 3a10427c00e308441b68d6f3a210e6a3, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7835302738782027157, guid: 3a10427c00e308441b68d6f3a210e6a3, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8577081320252690571, guid: 3a10427c00e308441b68d6f3a210e6a3, type: 3}
       propertyPath: m_TagString
