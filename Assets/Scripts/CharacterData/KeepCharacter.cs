@@ -23,5 +23,23 @@ public class KeepCharacter : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        GameObject characterMenuData = GameObject.FindWithTag("SelectedCharacter");
+
+        if (characterMenuData != null)
+        {
+            CharacterManager menuData = characterMenuData.GetComponent<CharacterManager>();
+            CharacterManager dataUpdater = this.gameObject.GetComponent<CharacterManager>();
+            SkinnedMeshRenderer textureData = characterMenuData.GetComponent<SkinnedMeshRenderer>();
+            SkinnedMeshRenderer textureDataTransfer = this.gameObject.GetComponent<SkinnedMeshRenderer>();
+
+            dataUpdater.selectedOption = menuData.selectedOption;
+            textureDataTransfer.sharedMesh = textureData.sharedMesh;
+            textureDataTransfer.sharedMaterial = textureData.sharedMaterial;
+            Debug.Log("Updating");
+        }
+
+    }
     // You can add your custom logic here
 }
