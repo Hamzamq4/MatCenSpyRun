@@ -8,7 +8,7 @@ PlayerSettings:
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
-  defaultScreenOrientation: 4
+  defaultScreenOrientation: 0
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
@@ -135,7 +135,9 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 1.0
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: -5026110963325022380, guid: 8492f99241b25ea40b949e167b8c40ad, type: 2}
+  - {fileID: 11400000, guid: e8f5a557a6e4b844f9a0454027f1ca91, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -151,12 +153,21 @@ PlayerSettings:
   m_ColorGamuts: 00000000
   targetPixelDensity: 30
   resolutionScalingMode: 0
-  resetResolutionOnWindowResize: 0
+  resetResolutionOnWindowResize: 1
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.DefaultCompany.APDP4
+<<<<<<< Updated upstream
     Standalone: com.Medialogisterne.Spy-Run
+=======
+<<<<<<< HEAD
+    Standalone: com.DefaultCompany.APDP4new
+    iPhone: com.Medialogisterne.Spy-Run
+=======
+    Standalone: com.Medialogisterne.Spy-Run
+>>>>>>> 526e20e8e9aff2ee9ca5513bb8b2c7ad4604a8ba
+>>>>>>> Stashed changes
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -234,7 +245,7 @@ PlayerSettings:
   appleEnableAutomaticSigning: 0
   iOSRequireARKit: 0
   iOSAutomaticallyDetectAndAddCapabilities: 1
-  appleEnableProMotion: 0
+  appleEnableProMotion: 1
   shaderPrecisionModel: 0
   clonedFromGUID: c0afd0d1d80e3634a9dac47e8a0426ea
   templatePackageId: com.unity.template.3d@5.0.4
@@ -836,7 +847,7 @@ PlayerSettings:
   allowUnsafeCode: 0
   useDeterministicCompilation: 1
   enableRoslynAnalyzers: 1
-  selectedPlatform: 0
+  selectedPlatform: 3
   additionalIl2CppArgs: 
   scriptingRuntimeVersion: 1
   gcIncremental: 1
