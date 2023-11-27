@@ -1142,6 +1142,7 @@ MonoBehaviour:
   enemyDeathSpawnPrefab: {fileID: 2260376842356947821, guid: d44815b6a70913d4b9797a8fb0cc8733, type: 3}
   fangetClip: {fileID: 8300000, guid: 534334654295f4bb5b680a2539695b39, type: 3}
   saveScore: 0
+  player: {fileID: 0}
 --- !u!114 &558159030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2860,6 +2861,8 @@ MonoBehaviour:
   scoreUI: {fileID: 74754165}
   fromMenu: {fileID: 0}
   run: {fileID: 0}
+  playerListener: {fileID: 0}
+  player: {fileID: 0}
   pause: {fileID: 302200089}
   genoptag: {fileID: 617053577}
   pauseAfslut: {fileID: 1031552265}

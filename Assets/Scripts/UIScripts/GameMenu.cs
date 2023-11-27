@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 using System.Linq;
+using JetBrains.Annotations;
 
 [System.Serializable]
 public class GameMenu : MonoBehaviour
@@ -16,6 +17,8 @@ public class GameMenu : MonoBehaviour
     public Animation run;
     private Animator pAnimator;
 
+    public AudioListener playerListener;
+    public GameObject player;
 
     public Button pause, genoptag, pauseAfslut, tryAgain, gameOverAfslut;
 
@@ -28,6 +31,8 @@ public class GameMenu : MonoBehaviour
         tryAgain.onClick.AddListener(delegate { ChangePanel("tryAgain"); });
         gameOverAfslut.onClick.AddListener(delegate { ChangePanel("tryAgainAfslut"); });
         fromMenu = GameObject.FindGameObjectWithTag("FromMenu");
+
+        player = GameObject.FindWithTag("Player");
 
     }
     //DisablePanels disable the pause UI panel whenever it is called inside the ChangePanel function
@@ -46,6 +51,7 @@ public class GameMenu : MonoBehaviour
                 Debug.Log("Pause");
                 DisablePanels();
                 pause.gameObject.SetActive(false);
+                player.GetComponent<AudioListener>().enabled = false;
                 Time.timeScale = 0;
                 pausePanel.SetActive(true);
                 break;
@@ -54,6 +60,7 @@ public class GameMenu : MonoBehaviour
                 DisablePanels();
                 pause.gameObject.SetActive(true);
                 Time.timeScale = 1;
+                player.GetComponent<AudioListener>().enabled = true;
                 break;
             case "pauseAfslut":
                 Debug.Log("PauseAfslut");
