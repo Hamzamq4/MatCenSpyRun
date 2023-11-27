@@ -199,4 +199,9 @@ public class ScoreManager : MonoBehaviour
         health = 2;
         ScoreManager.isPlayerAlive = true;
     } 
+
+    public void OnDisable()
+    {
+        AudioListener.volume = 1;
+    }
 }
