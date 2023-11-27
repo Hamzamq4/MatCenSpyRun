@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: -1564269490536508623}
   - component: {fileID: -7161159050793517976}
   - component: {fileID: -2008442494744692913}
+  - component: {fileID: -8511157963517860548}
+  - component: {fileID: -8845171190635416287}
   m_Layer: 0
   m_Name: Laser 2
   m_TagString: Obstacle
@@ -94,7 +96,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7412207597216234611}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d65c60f8ecdab214faa46849a65279d8, type: 3}
   m_Name: 
@@ -226,3 +228,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 12.03, y: 2.2, z: 108.42}
   m_Center: {x: -0.14, y: 0, z: -49.7}
+--- !u!114 &-8511157963517860548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7412207597216234611}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddee754d09a284206be3597cbe77c900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  followDistance: 22
+  acceleration: 30000
+--- !u!114 &-8845171190635416287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7412207597216234611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b8f1f82b847e46f8a605794ee2b6266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  followDistance: 22
+  acceleration: 30000

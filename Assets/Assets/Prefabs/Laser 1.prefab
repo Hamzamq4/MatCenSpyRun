@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5406743274540985984}
   - component: {fileID: -1564269490536508623}
   - component: {fileID: 3909943149598799503}
+  - component: {fileID: 5910770190451722247}
   m_Layer: 0
   m_Name: Laser 1
   m_TagString: Obstacle
@@ -211,6 +212,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 12.03, y: 2.2, z: 108.42}
   m_Center: {x: -0.14, y: 0, z: -49.7}
+--- !u!114 &5910770190451722247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7412207597216234611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddee754d09a284206be3597cbe77c900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  followDistance: 22
+  acceleration: 30000
 --- !u!1 &7642631986248014579
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &34708621324802263
 Transform:
   m_ObjectHideFlags: 0
@@ -250,7 +266,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7642631986248014579}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8b101a18d7e8e3c4d8f7d8932564dce7, type: 3}
