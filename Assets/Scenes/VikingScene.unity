@@ -982,7 +982,7 @@ MonoBehaviour:
   scoreCount: 0
   highScoreCount: 0
   pointsPerSecond: 1
-  pointsMultiplier: 0
+  pointsMultiplier: 2
   scoreIncreasing: 1
   defaultMultiplier: 1
   zeroLives: {fileID: 1444756015}
@@ -1005,10 +1005,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8137880b2913c40f38b5402b73b34e45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lanes: []
-  spacing: 5
+  lanes:
+  - {fileID: 1938645797}
+  - {fileID: 528139310}
+  - {fileID: 1529008785}
+  spacing: 60
   powerUp: {fileID: 4845816825048791106, guid: d333b548bc138354e893d3060733ecfb, type: 3}
-  spawnStartTime: 0
+  spawnStartTime: 3
 --- !u!1 &600213100
 GameObject:
   m_ObjectHideFlags: 0

@@ -1081,7 +1081,7 @@ MonoBehaviour:
   scoreCount: 0
   highScoreCount: 0
   pointsPerSecond: 1
-  pointsMultiplier: 0
+  pointsMultiplier: 2
   scoreIncreasing: 1
   defaultMultiplier: 1
   zeroLives: {fileID: 690253988}
@@ -1108,7 +1108,7 @@ MonoBehaviour:
   - {fileID: 1938645797}
   - {fileID: 528139310}
   - {fileID: 1529008785}
-  spacing: 11
+  spacing: 60
   powerUp: {fileID: 4845816825048791106, guid: d333b548bc138354e893d3060733ecfb, type: 3}
   spawnStartTime: 3
 --- !u!1 &600213100
