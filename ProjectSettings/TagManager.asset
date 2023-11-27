@@ -17,6 +17,7 @@ TagManager:
   - Coin
   - staticObstacle
   - powerUp
+  - SelectedCharacter
   layers:
   - Default
   - TransparentFX

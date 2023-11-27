@@ -56,6 +56,8 @@ public class ScoreManager : MonoBehaviour
 
     private AudioSource radio;
 
+    public GameObject player;
+
     void Start()
     {
         if (PlayerPrefs.HasKey("HighScore"))
@@ -73,6 +75,8 @@ public class ScoreManager : MonoBehaviour
         radio = radioObject.GetComponent<AudioSource>();
 
         pAnimator = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
+
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()
@@ -182,6 +186,7 @@ public class ScoreManager : MonoBehaviour
         }
         yield return new WaitForSeconds(3f); // wait for 3 seconds
         gameOverPanel.SetActive(true);
+        player.GetComponent<AudioListener>().enabled = false;
         scoreUI.gameObject.SetActive(false);
         Time.timeScale = 0; // set the time scale to zero after WaitForSeconds
     }
