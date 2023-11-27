@@ -186,7 +186,7 @@ public class ScoreManager : MonoBehaviour
         }
         yield return new WaitForSeconds(3f); // wait for 3 seconds
         gameOverPanel.SetActive(true);
-        player.GetComponent<AudioListener>().enabled = false;
+        AudioListener.volume = 0;
         scoreUI.gameObject.SetActive(false);
         Time.timeScale = 0; // set the time scale to zero after WaitForSeconds
     }

@@ -19,6 +19,7 @@ public class GameMenu : MonoBehaviour
 
     public AudioListener playerListener;
     public GameObject player;
+    public AudioListener audioListener;
 
     public Button pause, genoptag, pauseAfslut, tryAgain, gameOverAfslut;
 
@@ -31,6 +32,7 @@ public class GameMenu : MonoBehaviour
         tryAgain.onClick.AddListener(delegate { ChangePanel("tryAgain"); });
         gameOverAfslut.onClick.AddListener(delegate { ChangePanel("tryAgainAfslut"); });
         fromMenu = GameObject.FindGameObjectWithTag("FromMenu");
+        audioListener = player.GetComponent<AudioListener>();
 
         player = GameObject.FindWithTag("Player");
 
@@ -51,7 +53,7 @@ public class GameMenu : MonoBehaviour
                 Debug.Log("Pause");
                 DisablePanels();
                 pause.gameObject.SetActive(false);
-                player.GetComponent<AudioListener>().enabled = false;
+                AudioListener.volume = 0;
                 Time.timeScale = 0;
                 pausePanel.SetActive(true);
                 break;
@@ -60,7 +62,7 @@ public class GameMenu : MonoBehaviour
                 DisablePanels();
                 pause.gameObject.SetActive(true);
                 Time.timeScale = 1;
-                player.GetComponent<AudioListener>().enabled = true;
+                AudioListener.volume = 1;
                 break;
             case "pauseAfslut":
                 Debug.Log("PauseAfslut");
