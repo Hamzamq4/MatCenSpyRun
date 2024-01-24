@@ -16,6 +16,9 @@ using System.Linq;
 [System.Serializable]
 public class ScoreManager : MonoBehaviour
 {
+    public GameObject uiGameObject; // Assign this in the Unity editor
+
+
     public TMP_Text scoreText;
     public TMP_Text endScoreText;
     public TMP_Text highScoreText;
@@ -183,8 +186,19 @@ public class ScoreManager : MonoBehaviour
             }
             radio.PlayOneShot(fangetClip);
             Debug.Log("DeathAnimationTime");
+            
+        }
+        if (uiGameObject != null)
+        {
+            uiGameObject.SetActive(false);
         }
         yield return new WaitForSeconds(3f); // wait for 3 seconds
+
+        if (uiGameObject != null)
+        {
+            uiGameObject.SetActive(true);
+        }
+
         gameOverPanel.SetActive(true);
         AudioListener.volume = 0;
         scoreUI.gameObject.SetActive(false);
