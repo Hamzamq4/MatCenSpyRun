@@ -17,7 +17,7 @@ public class LaserObjectMovement : MonoBehaviour
         // Store the original position of the object holding this script
         originalPosition = transform.position;
         target = GameObject.Find("Player");
-        transform.Rotate(0, 0, 0, Space.Self);
+        transform.Rotate(90, 0, 0, Space.Self);
         Destroy(gameObject, 15f); // Destroy the object after 10 second
     }
 

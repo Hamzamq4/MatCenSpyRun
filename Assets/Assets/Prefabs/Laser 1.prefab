@@ -95,13 +95,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7412207597216234611}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d65c60f8ecdab214faa46849a65279d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  followDistance: 22
+  followDistance: 40
   acceleration: 30000
 --- !u!82 &-1564269490536508623
 AudioSource:
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  followDistance: 22
+  followDistance: 40
   acceleration: 30000
 --- !u!1 &7642631986248014579
 GameObject:
