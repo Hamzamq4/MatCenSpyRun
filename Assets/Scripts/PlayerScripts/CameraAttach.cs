@@ -29,7 +29,7 @@ public class CameraAttach : MonoBehaviour
         schoolTerrainLayerMask = LayerMask.GetMask("SchoolTerrain");
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         HandleTranslation();
         HandleRotation();
