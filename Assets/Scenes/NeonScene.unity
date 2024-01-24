@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2841,6 +2841,7 @@ MonoBehaviour:
   run: {fileID: 0}
   playerListener: {fileID: 0}
   player: {fileID: 0}
+  audioListener: {fileID: 0}
   pause: {fileID: 302200089}
   genoptag: {fileID: 617053577}
   pauseAfslut: {fileID: 1031552265}
@@ -9097,8 +9098,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particleSystemPrefab: {fileID: 163066, guid: 53777b8572d1e7242bc90044f62667ce, type: 3}
-  maleDestroySound: {fileID: 0}
-  femaleDestroySound: {fileID: 0}
+  maleDestroySound: {fileID: 8300000, guid: 7652dd8c4437d8a499c02b2b2f4f9fc2, type: 3}
+  femaleDestroySound: {fileID: 8300000, guid: 71b286ae54f604cea98fef57cf4b3846, type: 3}
 --- !u!4 &6450177392893084702
 Transform:
   m_ObjectHideFlags: 0

@@ -24,7 +24,7 @@ public class LaserObjectMovementTwo : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         // Only follow the target if it exists
         if (target != null)
