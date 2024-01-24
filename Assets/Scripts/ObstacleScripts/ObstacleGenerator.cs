@@ -20,6 +20,7 @@ public class ObstacleGenerator : MonoBehaviour
 
     private int currentTerrainLayer; //layer of currently active terrain
     private Transform player; // the player object
+    private PlayerMovement playerSpeed;
 
     public float spawnStartTime;
     private float elapsedSeconds;
@@ -28,10 +29,32 @@ public class ObstacleGenerator : MonoBehaviour
     {
         // finds the player object in the scene
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        playerSpeed = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
     }
 
     void Update () 
     {
+        if (20f <= playerSpeed.speed && playerSpeed.speed <= 25f)
+        {
+            spacing = 5;
+        }
+        else if (25f < playerSpeed.speed && playerSpeed.speed <= 30f)
+        {
+            spacing = 4;
+        }
+        else if (30f < playerSpeed.speed && playerSpeed.speed <= 35f)
+        {
+            spacing = 3.5f; 
+        }
+        else if (35f < playerSpeed.speed && playerSpeed.speed <= 40f)
+        {
+            spacing = 2.5f;
+        }
+        else if (40f < playerSpeed.speed)
+        {
+            spacing = 1f;
+        }
+
         //Start a timer and determines which types of obstacle should be instantiated based on a percentage given in the Random.value variable.
         elapsedSeconds += Time.deltaTime;
         if (elapsedSeconds >= spawnStartTime)

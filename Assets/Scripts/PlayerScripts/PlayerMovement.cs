@@ -13,15 +13,15 @@ public class PlayerMovement : MonoBehaviour
     bool canmove = true;
     int line = 1;
     int targetLine = 1;
-    float speed = 20f; // added variable for speed
+    public float speed = 20f; // added variable for speed
     float jumpHeight = 20f; // added variable for jump height
     float jumpDuration = 0.5f; // added variable for jump duration
     float gravity = -50f; // added variable for gravity
     private Animator pAnimator;
 
     // added variables for speed increase
-    float maxSpeed = 25f;
-    float speedIncreasePerSecond = 0.01f;
+    public float maxSpeed = 25f;
+    public float speedIncreasePerSecond = 0.01f;
 
     private inputManager inputManager;
 

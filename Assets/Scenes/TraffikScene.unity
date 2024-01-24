@@ -2863,6 +2863,7 @@ MonoBehaviour:
   run: {fileID: 0}
   playerListener: {fileID: 0}
   player: {fileID: 0}
+  audioListener: {fileID: 0}
   pause: {fileID: 302200089}
   genoptag: {fileID: 617053577}
   pauseAfslut: {fileID: 1031552265}
@@ -9085,6 +9086,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33b6a72b1ab6f2442b8656b2cb6ee8fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 20
+  maxSpeed: 40.5
+  speedIncreasePerSecond: 0.2
 --- !u!54 &6450177392893084700
 Rigidbody:
   m_ObjectHideFlags: 0
