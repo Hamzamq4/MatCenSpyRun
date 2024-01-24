@@ -234,7 +234,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6315869493418615544
 Transform:
@@ -306,7 +306,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8836618478667456885
 Transform:
@@ -338,7 +338,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5430167053967523635
 Transform:
@@ -401,7 +401,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3519515870999723337
 Transform:
@@ -960,6 +960,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Fence_Wood_Large_02 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 129136, guid: 4efb67bc73b7a8d478f4b1c7eaf1f638, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408618, guid: 4efb67bc73b7a8d478f4b1c7eaf1f638, type: 3}
       propertyPath: m_RootOrder
       value: 39
@@ -1021,6 +1025,10 @@ PrefabInstance:
     - target: {fileID: 155218, guid: 2126a8c5355ec274ab9cea492bbbd3c7, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Boat_Broken_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 155218, guid: 2126a8c5355ec274ab9cea492bbbd3c7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 495150, guid: 2126a8c5355ec274ab9cea492bbbd3c7, type: 3}
       propertyPath: m_RootOrder
@@ -1096,6 +1104,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Fence_Wood_Large_02
       objectReference: {fileID: 0}
+    - target: {fileID: 129136, guid: 4efb67bc73b7a8d478f4b1c7eaf1f638, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408618, guid: 4efb67bc73b7a8d478f4b1c7eaf1f638, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1157,6 +1169,10 @@ PrefabInstance:
     - target: {fileID: 117786, guid: 6a3bdbed08d1abd4fb7dbab3c2526dd2, type: 3}
       propertyPath: m_Name
       value: SM_Env_Glacier_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 117786, guid: 6a3bdbed08d1abd4fb7dbab3c2526dd2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 448982, guid: 6a3bdbed08d1abd4fb7dbab3c2526dd2, type: 3}
       propertyPath: m_RootOrder
@@ -1232,6 +1248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Glacier_02 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 117786, guid: 6a3bdbed08d1abd4fb7dbab3c2526dd2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 448982, guid: 6a3bdbed08d1abd4fb7dbab3c2526dd2, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -1306,6 +1326,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Fence_Wood_Large_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 184652, guid: c4dfcc5f47794ea4c9d6ea7f64fcc8e6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 406504, guid: c4dfcc5f47794ea4c9d6ea7f64fcc8e6, type: 3}
       propertyPath: m_RootOrder
       value: 36
@@ -1367,6 +1391,10 @@ PrefabInstance:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 3}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 447208, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 3}
       propertyPath: m_RootOrder
@@ -1442,6 +1470,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Mountains_02
       objectReference: {fileID: 0}
+    - target: {fileID: 196442, guid: d73214eddd849d24a84e9dcb68195d3d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 482034, guid: d73214eddd849d24a84e9dcb68195d3d, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -1515,6 +1547,10 @@ PrefabInstance:
     - target: {fileID: 117786, guid: 6a3bdbed08d1abd4fb7dbab3c2526dd2, type: 3}
       propertyPath: m_Name
       value: SM_Env_Glacier_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 117786, guid: 6a3bdbed08d1abd4fb7dbab3c2526dd2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 448982, guid: 6a3bdbed08d1abd4fb7dbab3c2526dd2, type: 3}
       propertyPath: m_RootOrder
@@ -1590,6 +1626,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 447208, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1664,6 +1704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Fence_Wood_Large_02 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 129136, guid: 4efb67bc73b7a8d478f4b1c7eaf1f638, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408618, guid: 4efb67bc73b7a8d478f4b1c7eaf1f638, type: 3}
       propertyPath: m_RootOrder
       value: 35
@@ -1725,6 +1769,10 @@ PrefabInstance:
     - target: {fileID: 101680, guid: 487da53ead5d8b34f829f38dfa345485, type: 3}
       propertyPath: m_Name
       value: SM_Env_Reeds_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 101680, guid: 487da53ead5d8b34f829f38dfa345485, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 433482, guid: 487da53ead5d8b34f829f38dfa345485, type: 3}
       propertyPath: m_RootOrder
@@ -1800,6 +1848,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Fence_Wood_Large_02 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 129136, guid: 4efb67bc73b7a8d478f4b1c7eaf1f638, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408618, guid: 4efb67bc73b7a8d478f4b1c7eaf1f638, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -1861,6 +1913,10 @@ PrefabInstance:
     - target: {fileID: 196442, guid: d73214eddd849d24a84e9dcb68195d3d, type: 3}
       propertyPath: m_Name
       value: SM_Env_Mountains_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 196442, guid: d73214eddd849d24a84e9dcb68195d3d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 482034, guid: d73214eddd849d24a84e9dcb68195d3d, type: 3}
       propertyPath: m_RootOrder
@@ -1936,6 +1992,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Glacier_02 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 117786, guid: 6a3bdbed08d1abd4fb7dbab3c2526dd2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 448982, guid: 6a3bdbed08d1abd4fb7dbab3c2526dd2, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -2009,6 +2069,10 @@ PrefabInstance:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 3}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 447208, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 3}
       propertyPath: m_RootOrder
@@ -2084,6 +2148,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Fence_Wood_Large_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 184652, guid: c4dfcc5f47794ea4c9d6ea7f64fcc8e6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 406504, guid: c4dfcc5f47794ea4c9d6ea7f64fcc8e6, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2145,6 +2213,10 @@ PrefabInstance:
     - target: {fileID: 101680, guid: 487da53ead5d8b34f829f38dfa345485, type: 3}
       propertyPath: m_Name
       value: SM_Env_Reeds_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 101680, guid: 487da53ead5d8b34f829f38dfa345485, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 433482, guid: 487da53ead5d8b34f829f38dfa345485, type: 3}
       propertyPath: m_RootOrder
@@ -2220,6 +2292,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Fence_Wood_Large_01
       objectReference: {fileID: 0}
+    - target: {fileID: 184652, guid: c4dfcc5f47794ea4c9d6ea7f64fcc8e6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 406504, guid: c4dfcc5f47794ea4c9d6ea7f64fcc8e6, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2281,6 +2357,10 @@ PrefabInstance:
     - target: {fileID: 193746, guid: b60d2db556c6aa24b84c18b24899de0f, type: 3}
       propertyPath: m_Name
       value: SM_Env_Iceberg_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 193746, guid: b60d2db556c6aa24b84c18b24899de0f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 456016, guid: b60d2db556c6aa24b84c18b24899de0f, type: 3}
       propertyPath: m_RootOrder
@@ -2356,6 +2436,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Dock_02
       objectReference: {fileID: 0}
+    - target: {fileID: 166076, guid: a982d1a79ee76674c8183014f3ad89e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 456026, guid: a982d1a79ee76674c8183014f3ad89e3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2429,6 +2513,10 @@ PrefabInstance:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 3}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 447208, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 3}
       propertyPath: m_RootOrder
@@ -2504,6 +2592,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Glacier_02 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 117786, guid: 6a3bdbed08d1abd4fb7dbab3c2526dd2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 448982, guid: 6a3bdbed08d1abd4fb7dbab3c2526dd2, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -2577,6 +2669,10 @@ PrefabInstance:
     - target: {fileID: 173166, guid: fc8c3406324f57b4e966b5a9f42957cb, type: 3}
       propertyPath: m_Name
       value: SM_Env_Glacier_Arch_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 173166, guid: fc8c3406324f57b4e966b5a9f42957cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 451586, guid: fc8c3406324f57b4e966b5a9f42957cb, type: 3}
       propertyPath: m_RootOrder
@@ -2652,6 +2748,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 447208, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -2726,6 +2826,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Fence_Wood_Large_02 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 129136, guid: 4efb67bc73b7a8d478f4b1c7eaf1f638, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408618, guid: 4efb67bc73b7a8d478f4b1c7eaf1f638, type: 3}
       propertyPath: m_RootOrder
       value: 37
@@ -2787,6 +2891,10 @@ PrefabInstance:
     - target: {fileID: 173896, guid: 3fcd066fcc091354f8d7a4f5b1382049, type: 3}
       propertyPath: m_Name
       value: SM_Env_Glacier_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 173896, guid: 3fcd066fcc091354f8d7a4f5b1382049, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 414034, guid: 3fcd066fcc091354f8d7a4f5b1382049, type: 3}
       propertyPath: m_RootOrder
@@ -2862,6 +2970,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 447208, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -2935,6 +3047,10 @@ PrefabInstance:
     - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 3}
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 447208, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 3}
       propertyPath: m_RootOrder
@@ -3010,6 +3126,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Reeds_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 101680, guid: 487da53ead5d8b34f829f38dfa345485, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 433482, guid: 487da53ead5d8b34f829f38dfa345485, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -3084,6 +3204,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Fence_Wood_Large_02 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 129136, guid: 4efb67bc73b7a8d478f4b1c7eaf1f638, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408618, guid: 4efb67bc73b7a8d478f4b1c7eaf1f638, type: 3}
       propertyPath: m_RootOrder
       value: 40
@@ -3145,6 +3269,10 @@ PrefabInstance:
     - target: {fileID: 166076, guid: a982d1a79ee76674c8183014f3ad89e3, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Dock_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 166076, guid: a982d1a79ee76674c8183014f3ad89e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 456026, guid: a982d1a79ee76674c8183014f3ad89e3, type: 3}
       propertyPath: m_RootOrder
@@ -3220,6 +3348,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Dock_02
       objectReference: {fileID: 0}
+    - target: {fileID: 166076, guid: a982d1a79ee76674c8183014f3ad89e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 456026, guid: a982d1a79ee76674c8183014f3ad89e3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3294,6 +3426,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Fence_Wood_Large_02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 129136, guid: 4efb67bc73b7a8d478f4b1c7eaf1f638, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 408618, guid: 4efb67bc73b7a8d478f4b1c7eaf1f638, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -3355,6 +3491,10 @@ PrefabInstance:
     - target: {fileID: 117786, guid: 6a3bdbed08d1abd4fb7dbab3c2526dd2, type: 3}
       propertyPath: m_Name
       value: SM_Env_Glacier_02 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 117786, guid: 6a3bdbed08d1abd4fb7dbab3c2526dd2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 448982, guid: 6a3bdbed08d1abd4fb7dbab3c2526dd2, type: 3}
       propertyPath: m_RootOrder
@@ -3430,6 +3570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Fence_Wood_Large_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 184652, guid: c4dfcc5f47794ea4c9d6ea7f64fcc8e6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 406504, guid: c4dfcc5f47794ea4c9d6ea7f64fcc8e6, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -3491,6 +3635,10 @@ PrefabInstance:
     - target: {fileID: 117786, guid: 6a3bdbed08d1abd4fb7dbab3c2526dd2, type: 3}
       propertyPath: m_Name
       value: SM_Env_Glacier_02 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 117786, guid: 6a3bdbed08d1abd4fb7dbab3c2526dd2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 448982, guid: 6a3bdbed08d1abd4fb7dbab3c2526dd2, type: 3}
       propertyPath: m_RootOrder
@@ -3566,6 +3714,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Dirt_Tile_Large_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 149580, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 447208, guid: bd6a9ab5e7b2ec4488440c51d519bf8b, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -3639,6 +3791,10 @@ PrefabInstance:
     - target: {fileID: 117786, guid: 6a3bdbed08d1abd4fb7dbab3c2526dd2, type: 3}
       propertyPath: m_Name
       value: SM_Env_Glacier_02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 117786, guid: 6a3bdbed08d1abd4fb7dbab3c2526dd2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 448982, guid: 6a3bdbed08d1abd4fb7dbab3c2526dd2, type: 3}
       propertyPath: m_RootOrder
@@ -3714,6 +3870,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Fence_Wood_Large_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 184652, guid: c4dfcc5f47794ea4c9d6ea7f64fcc8e6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 406504, guid: c4dfcc5f47794ea4c9d6ea7f64fcc8e6, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -3775,6 +3935,10 @@ PrefabInstance:
     - target: {fileID: 129136, guid: 4efb67bc73b7a8d478f4b1c7eaf1f638, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Fence_Wood_Large_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 129136, guid: 4efb67bc73b7a8d478f4b1c7eaf1f638, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 408618, guid: 4efb67bc73b7a8d478f4b1c7eaf1f638, type: 3}
       propertyPath: m_RootOrder
