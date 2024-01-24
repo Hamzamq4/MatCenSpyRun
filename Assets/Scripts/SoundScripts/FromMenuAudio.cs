@@ -44,7 +44,7 @@ public class FromMenuAudio : MonoBehaviour
     activeScene = SceneManager.GetActiveScene().buildIndex;
     if(!hasPlayedIntro)
     {
-        if(activeScene == 1)
+        if(activeScene != 0)
         {
         GameObject radioObject = GameObject.FindGameObjectWithTag("Radio");
         radio = radioObject.GetComponent<AudioSource>();
