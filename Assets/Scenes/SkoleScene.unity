@@ -1007,7 +1007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 302287b71a16c4797836102ebdc0761b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiGameObject: {fileID: 0}
+  uiGameObject: {fileID: 302200085}
   scoreText: {fileID: 210775096}
   endScoreText: {fileID: 624363407}
   highScoreText: {fileID: 283942086}
